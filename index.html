@@ -37,34 +37,10 @@
       </div>
     
 
-    <script src="./js/main.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/TsoyYuriy/test_lib/js/main.js"></script>
 
-    <script>
-      // Пример использования
-      const widgetConfig = {
-        confirmation_token: 'ct-287e0c37-000f-5000-8000-16961d35b0fd',
-        return_url: 'https://example.com/',
-        error_callback: function(error) {
-          console.log(error);
-          // Здесь можно добавить логику для отображения ошибки пользователю
-        }
-      };
-
-      const paymentWidget = new CustomPaymentWidget(widgetConfig);
-      const checkoutWidget = paymentWidget.init();
-
-      // Пример использования метода sendPaymentData
-      const paymentData = { /* данные для оплаты */ };
-      checkoutWidget.sendPaymentData(paymentData)
-        .then(response => {
-          console.log('Успешный ответ сервера:', response);
-          // Здесь можно добавить логику для обработки успешного ответа
-        })
-        .catch(error => {
-          console.error('Ошибка ответа сервера:', error);
-          // Здесь можно добавить логику для обработки ошибки
-        });
-    </script>
+  
 
   </body>
 </html>
